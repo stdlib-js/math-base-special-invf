@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/math-base-special-invf",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Compute the multiplicative inverse of a single-precision floating-point number.",
   "license": "Apache-2.0",
   "author": {
