@@ -41,32 +41,30 @@ The [multiplicative inverse][multiplicative-inverse] (or **reciprocal**) is defi
 
 <!-- /.intro -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/math-base-special-invf
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-invf = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-invf@umd/bundle.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-invf@umd/bundle.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.invf;
-})();
-</script>
+var invf = require( '@stdlib/math-base-special-invf' );
 ```
 
 #### invf( x )
@@ -100,15 +98,10 @@ v = invf( NaN );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@umd/bundle.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-round@umd/bundle.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-invf@umd/bundle.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var randu = require( '@stdlib/random-base-randu' );
+var round = require( '@stdlib/math-base-special-round' );
+var invf = require( '@stdlib/math-base-special-invf' );
 
 var x;
 var i;
@@ -117,11 +110,6 @@ for ( i = 0; i < 100; i++ ) {
     x = round( randu()*100.0 ) - 50.0;
     console.log( 'invf(%d) = %d', x, invf( x ) );
 }
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -130,7 +118,88 @@ for ( i = 0; i < 100; i++ ) {
 
 <!-- C interface documentation. -->
 
+* * *
 
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/math/base/special/invf.h"
+```
+
+#### stdlib_base_invf( x )
+
+Computes the multiplicative inverse of a single-precision floating-point number.
+
+```c
+float y = stdlib_base_invf( 2.0f );
+// returns 0.5f
+```
+
+The function accepts the following arguments:
+
+-   **x**: `[in] float` input value.
+
+```c
+float stdlib_base_inv( const float x );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/math/base/special/invf.h"
+#include <stdio.h>
+
+int main() {
+    float x[] = { 3.0f, 4.0f, 5.0f, 12.0f };
+
+    float y;
+    int i;
+    for ( i = 0; i < 4; i++ ) {
+        y = stdlib_base_invf( x[ i ] );
+        printf( "inv(%f) = %f\n", x[ i ], y );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
@@ -211,6 +280,7 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 [deno-url]: https://github.com/stdlib-js/math-base-special-invf/tree/deno
 [umd-url]: https://github.com/stdlib-js/math-base-special-invf/tree/umd
 [esm-url]: https://github.com/stdlib-js/math-base-special-invf/tree/esm
+[branches-url]: https://github.com/stdlib-js/math-base-special-invf/blob/main/branches.md
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/math-base-special-invf/main/LICENSE
 
@@ -218,7 +288,7 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/math/base/special/inv]: https://github.com/stdlib-js/math-base-special-inv/tree/umd
+[@stdlib/math/base/special/inv]: https://github.com/stdlib-js/math-base-special-inv
 
 <!-- </related-links> -->
 
