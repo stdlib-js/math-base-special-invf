@@ -63,7 +63,7 @@ y = \frac{1}{x}
 ## Usage
 
 ```javascript
-import invf from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-invf@esm/index.mjs';
+import invf from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-invf@v0.1.0-esm/index.mjs';
 ```
 
 #### invf( x )
@@ -105,7 +105,7 @@ v = invf( NaN );
 
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@esm/index.mjs';
 import round from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-round@esm/index.mjs';
-import invf from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-invf@esm/index.mjs';
+import invf from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-invf@v0.1.0-esm/index.mjs';
 
 var x;
 var i;
