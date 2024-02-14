@@ -65,6 +65,11 @@ y = \frac{1}{x}
 To use in Observable,
 
 ```javascript
+invf = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-invf@umd/browser.js' )
+```
+The previous example will load the latest bundled code from the umd branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/math-base-special-invf/tags). For example,
+
+```javascript
 invf = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-invf@v0.2.0-umd/browser.js' )
 ```
 
@@ -77,7 +82,7 @@ var invf = require( 'path/to/vendor/umd/math-base-special-invf/index.js' )
 To include the bundle in a webpage,
 
 ```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-invf@v0.2.0-umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-invf@umd/browser.js"></script>
 ```
 
 If no recognized module system is present, access bundle contents via the global scope:
@@ -127,7 +132,7 @@ v = invf( NaN );
 <body>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@umd/browser.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-round@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-invf@v0.2.0-umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-invf@umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
 
