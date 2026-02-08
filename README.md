@@ -63,7 +63,7 @@ y = \frac{1}{x}
 ## Usage
 
 ```javascript
-import invf from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-invf@deno/mod.js';
+import invf from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-invf@v0.2.3-deno/mod.js';
 ```
 
 #### invf( x )
@@ -100,7 +100,7 @@ v = invf( NaN );
 ```javascript
 import discreteUniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-discrete-uniform@deno/mod.js';
 import logEachMap from 'https://cdn.jsdelivr.net/gh/stdlib-js/console-log-each-map@deno/mod.js';
-import invf from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-invf@deno/mod.js';
+import invf from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-invf@v0.2.3-deno/mod.js';
 
 var opts = {
     'dtype': 'float32'
